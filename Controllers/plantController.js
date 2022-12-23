@@ -15,8 +15,8 @@ module.exports = {
       // Make the request to the API
       const response = await axios.get(apiUrl, {
         params: {
-          q: searchTerm,
-          token: apiKey,
+          q: searchTerm, // Query parameter for the search term
+          token: apiKey, // Query parameter for the API key
         },
       });
 
@@ -24,7 +24,7 @@ module.exports = {
       res.send(response.data);
     } catch (error) {
       console.error(error);
-      res.sendStatus(500);
+      res.sendStatus(500); // Send a status code of 500 if there was an error
     }
   },
 
@@ -39,7 +39,7 @@ module.exports = {
       // Make the request to the API
       const response = await axios.get(apiUrl, {
         params: {
-          token: apiKey,
+          token: apiKey, // Query parameter for the API key
         },
       });
 
@@ -47,7 +47,7 @@ module.exports = {
       res.send(response.data);
     } catch (error) {
       console.error(error);
-      res.sendStatus(500);
+      res.sendStatus(500);  // Send a status code of 500 if there was an error
     }
   },
 };
