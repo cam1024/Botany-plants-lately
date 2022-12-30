@@ -12,6 +12,7 @@ body {
   justify-content: center;
 }
 
+/*Main photo container*/
 .container-header {
     height: 20%;
     width: auto;
@@ -24,47 +25,26 @@ body {
     background-image: "assest/images/BPLBannerPic.jpg"
 }
 
-.main-photo {
- /* position: absolute;
-  justify-content: center;
-  margin-left: auto;
-  margin-right: auto;
-  height: 400px;
-  width: 800px;
-  border-color: black;
-  border-radius: 5px;
-  border-top: 5px;
-  border-bottom: 5px;
-  border-left: 5px;
-  border-right: 5px;
-  background-image: "assest/images/BPLBannerPic.jpg"*/
-
-}
-
+/* Main photo at the top of the page */
 .main-image {  
- /* position: absolute 50%, 50%;
-  justify-content: center;*/
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  /*display: block;*/
   object-fit: fill;
   height: 500px;
   width: 900px;
 }
 
+/* Welcome intro header */
 h1 {
-  /*position: relative;*/
   justify-content: center;
-/*  left: 60%;*/
   text-align: center;
   display: block; 
 }
 
+/* Welcome intro */
 p {
-  /*position: relative;*/
   justify-content: center;
-  /*left: 60%;*/
   text-align: center;
   display: block; 
   width: 60vw;
@@ -72,10 +52,26 @@ p {
   margin-right: auto;
 }
 
-#search {
+form {
+  float: right;
+  display: block;
+ /* color: black;*/
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  left: 60%;
+}
+.btn-submit {
+  float: right;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(91, 182, 91);
+  color: white;
 
 }
 
+/*Plant of the day container*/
 .container-pod {
   border: 2px solid black;
   margin-left: auto;
@@ -84,28 +80,29 @@ p {
   flex-direction: row;
 }
 
+/*Plant of the day image place holder*/
 .image-pod {
   width: 300px;
   height: 300px;
 }
 
+/*Plant of the day discription place holder*/
 .pod-content {
  display: flex;
  flex-direction: column;
-  /*margin-right: auto;*/
 }
 
+/*Plant of the day header*/
 .pod-content h2 {
   margin-left: auto;
   margin-right: auto;
 }
-/* Add a black background color to the top navigation bar */
+/* Navigation bar background color, size and placement */
 .topnav {
   margin-left: auto;
   margin-right: auto;
-  width: 80vw;
-  /*overflow: hidden;*/
-  background-color: #b8e0be;
+  width: 80%;
+  background-color: #68c778;
 }
 
 /* Style the links inside the navigation bar */
@@ -156,8 +153,15 @@ footer {
   align-items: center;
 }
 
-/* When the screen is less than 600px wide, stack the links and the search field vertically instead of horizontally */
-/*@media screen and (max-width: 600px) {
+footer a {
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  text-align: center;
+}
+
+/* Search bar on-click properties*/
+@media screen and (max-width: 600px) {
   .topnav a, .topnav okkinput[type=text] {
     float: none;
     display: block;
@@ -169,4 +173,4 @@ footer {
   .topnav input[type=text] {
     border: 1px solid #ccc;
   }
-}*/
+}
