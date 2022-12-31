@@ -55,21 +55,13 @@ p {
 form {
   float: right;
   display: block;
- /* color: black;*/
   text-align: center;
-  padding: 14px 16px;
+    padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
   left: 60%;
 }
-.btn-submit {
-  float: right;
-  justify-content: center;
-  align-items: center;
-  background-color: rgb(91, 182, 91);
-  color: white;
 
-}
 
 /*Plant of the day container*/
 .container-pod {
@@ -128,16 +120,51 @@ form {
   background-color: #208d51;
   color: white;
 }
-
-/* Style the search box inside the navigation bar */
-.topnav input[type=text] {
-  float: right;
+@media (max-width: 1250px) {
+  /* … */
+  /* Style the search box inside the navigation bar smaller screens */
+.topnav input[type=search] {
+  float: left;
   padding: 6px;
   border: none;
   margin-top: 8px;
   margin-right: 16px;
   font-size: 17px;
+  width: 300px;
 }
+.btn-submit {
+  float: right;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(91, 182, 91);
+  color: white;
+  height: 40px;}
+}
+
+@media (min-width: 1251px) {
+  /* … */
+  /* Style the search box inside the navigation bar larger screens*/
+.topnav input[type=search] {
+  float: left;
+  padding: 6px;
+  border: none;
+  margin-top: 8px;
+  margin-right: 16px;
+  font-size: 17px;
+  width: 400px;
+
+}
+.btn-submit {
+  float: right;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(91, 182, 91);
+  color: white;
+
+}
+}
+
+
 
 footer {
   display: block;
@@ -174,3 +201,5 @@ footer a {
     border: 1px solid #ccc;
   }
 }
+
+
