@@ -15,8 +15,18 @@ Plant.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
-    toxicity: {
-      type: DataTypes.STRING,
+    toxic_to_people: {
+      type: DataTypes.BOOLEAN,
+      allowNull: false,
+      
+    },
+    toxic_to_dogs: {
+      type: DataTypes.BOOLEAN,
+      allowNull: false,
+      
+    },
+    toxic_to_cats: {
+      type: DataTypes.BOOLEAN,
       allowNull: false,
       
     },
