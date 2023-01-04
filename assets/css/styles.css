@@ -50,6 +50,7 @@ p {
   width: 60vw;
   margin-left: auto;
   margin-right: auto;
+  color: rgb(143, 99, 34)
 }
 
 form {
@@ -94,14 +95,15 @@ form {
   margin-left: auto;
   margin-right: auto;
   width: 80%;
-  background-color: #68c778;
+  background-color: #ce9d70;
+  color: white;
 }
 
 /* Nav bar links (styled) */
 .topnav a {
   float: left;
   display: block;
-  color: black;
+  color: rgb(255, 255, 255);
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -118,7 +120,7 @@ form {
 /* "Active" element styling*/
 .topnav a.active {
   /*background-color: #208d51;*/
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
 }
 @media (max-width: 1250px) {
   /* Nav bar smaller screens */
