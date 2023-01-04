@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" href="assets/css/login.css" />
+
+    <title>Botany Plants Lately</title>
+</head>
+<body>
+    <div class="container">   
+        <div class="topnav">
+          <a class="active" href="#home">Home</a>
+            <a href="#Login" onclick="document.getElementById('id01').style.display='block'">Login</a>
+           
+             <a href="#Toxicity">Toxicity</a>
+             <a href="#Zodiac">Zodiac Plants</a>
+             <a href="#holistic">Holistic</a>
+             <form id="form">
+              <input type="search" id="query" name="q" placeholder="Search..."><button class="btn-submit">Submit</button>
+            </form>
+              </div>  
+              <br>
+     <!---- <Main-photo at the top of the welcome page>-->
+        <img class="main-image" src="assets/images/BPLBannerPic.jpg">
+        <br>
+        <br>
+      
+        <div class="container-pod">
+          <img class="image-pod" src={{img-url}} alt="image placeholder">
+          <div class="pod-content">
+          <h2> Plant of the Day</h2>
+          <p>{{plant of the day content}}</p>
+         </div>
+       </div>
+        
+
+        <h1>Hello and welcome to Botany Plants Lately!</h1>   
+          <p>We are passionate about everything plants! Here you can identify the plants you have, find new beauties to add to your home or garden. We make it easy to learn how to care for them, their individual needs, their overall health and their hollistic properties.</p>
+ 
+    </div>
+<!-- The Modal "Close" -->
+<div id="id01" class="modal">
+  <span onclick="document.getElementById('id01').style.display='none'"
+class="close" title="Close Modal">&times;</span>
+
+  <!-- Modal Content -->
+  <form class="modal-content animate" action="/action_page.php">
+    <div class="imgcontainer">
+      <img src="assets/images/BOTPFP.png" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+      <label for="uname"><b>Username or email</b></label>
+      <input type="text" placeholder="Enter Username or email" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+
+      <button type="submit" class="modal-button">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn modal-button">Cancel</button>
+      <span class="psw"></span> <a href="#">Forgot password?</a></span>
+    </div>
+  </form>
+</div>
+    <!---<footer>
+      <a class="active" href="contact-us">Contact Us</a>
+      <a href="#help">Help</a>
+       <a href="#forums">Forums</a
+    </footer>-->
+
+
+  <script src="assets/js/login.js"></script>
+</body>
+</html>
