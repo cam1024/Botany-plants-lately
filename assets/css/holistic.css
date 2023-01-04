@@ -1,15 +1,16 @@
 * {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
 }
 
 body {
-  background-color: rgb(231, 206, 173);
+  background-color: rgb(68, 129, 94);
 }
 
 .container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content:center;
 }
 
 /*Main photo container*/
@@ -40,6 +41,7 @@ h1 {
   justify-content: center;
   text-align: center;
   display: block; 
+  color: white;
 }
 
 /* Welcome intro */
@@ -65,29 +67,36 @@ form {
 
 /*Plant of the day container*/
 .container-pod {
-  border: 2px solid black;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 10px;
   display: flex;
-  flex-direction: row;
+  justify-content: center;
+  /*flex-wrap: wrap*/
 }
 
 /*Plant of the day image place holder*/
 .image-pod {
   width: 300px;
-  height: 300px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-right: 20px;
 }
 
 /*Plant of the day discription place holder*/
 .pod-content {
- display: flex;
- flex-direction: column;
+  float: right;
 }
 
 /*Plant of the day header*/
 .pod-content h2 {
+  display: flex;
+  justify-content: center;  
   margin-left: auto;
   margin-right: auto;
+  color: green;
 }
 /* Navigation bar background color, size and placement */
 .topnav {
@@ -117,7 +126,6 @@ form {
 
 /* "Active" element styling*/
 .topnav a.active {
-  /*background-color: #208d51;*/
   color: rgb(0, 0, 0);
 }
 @media (max-width: 1250px) {
@@ -199,5 +207,4 @@ footer a {
     border: 1px solid #ccc;
   }
 }
-
 
