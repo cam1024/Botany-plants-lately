@@ -1,4 +1,6 @@
 const axios = require("axios");
+const router = express.Router();
+const express = require("express");
 
 module.exports = {
   searchPlants: async (req, res) => {
@@ -51,3 +53,10 @@ module.exports = {
     }
   },
 };
+// GET /plants - search for plants
+router.get("/plants", module.exports.searchPlants);
+
+// GET /plants/:id - get information about a specific plant
+router.get("/plants/:id", module.exports.getPlant);
+
+module.exports = router;
