@@ -1,28 +1,55 @@
 <!DOCTYPE html>
 <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css'>
 <html lang="en">
-
+    <link href="https://fonts.googleapis.com/css2?family=Comforter+Brush&family=Dancing+Script&family=Delius+Swash+Caps&family=Merienda+One&family=Oleo+Script&family=Paprika&family=Sofia&family=Tangerine&display=swap" rel="stylesheet">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/style.css">
     <title>Create Profile</title>
-    <h1>Create Your Profile!</h1>
+    <div><div class="card-1">
+    <header>Create Your Profile!<header>
+</div>
 </head>
 
 <body>
     <form action="post_profile.php" method="POST">
-        
+        <div><div class="card-2">
 
         <label>Name</label><input name="name">
         <label>Age</label><input name="age">
         <label>Country</label><input name="country">
         <button>Submit</button>
-        
-        
+    </div>
+
+        <div class="p-2">
+            <form onsubmit="return handleData()" method="post" action="https://postman-echo.com/post">
+                <p>Select all your interests</p>
+                <div>
+                    <input type="checkbox" name="langs" id="langs_javascript" value="JavaScript" checked> <label
+                        for="langs_javascript">Farming</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="langs" id="langs_perl" value="Perl"> <label for="langs_perl">Herbal
+                        Supplements</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="langs" id="langs_php" value="PHP" checked> <label
+                        for="langs_php">Gardens</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="langs" id="langs_ruby" value="Ruby"> <label for="langs_ruby">Fruit
+                        Trees</label>
+                </div>
+                <div>
+                    <input type="submit" name="submit" value="Submit" />
+                </div>
+            </form>
+        </div>
     </form>
 
 </body>
 <footer>Botany Lately</footer>
+
 </html>
