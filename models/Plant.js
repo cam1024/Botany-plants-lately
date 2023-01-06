@@ -36,11 +36,11 @@ Plant.init(
       
     },
     holistic: {
-      type: Datatypes.STRING,
+      type: DataTypes.STRING,
       allowNull: false,
     },
     belongs_to: {
-      type: Datatypes.INTEGER,
+      type: DataTypes.INTEGER,
       references:{
         model: 'user',
         key: 'id',
