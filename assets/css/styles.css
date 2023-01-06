@@ -1,9 +1,10 @@
 * {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+    font-family: 'Delius Swash Caps', 'cursive';
 }
 
 body {
   background-color: rgb(216, 188, 151);
+  font-family: 'paprika';
 }
 
 .container {
@@ -50,7 +51,7 @@ p {
   width: 60vw;
   margin-left: auto;
   margin-right: auto;
-  color: rgb(143, 99, 34)
+  color: rgb(78, 54, 18)
 }
 
 form {
