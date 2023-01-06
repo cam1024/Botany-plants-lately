@@ -1,7 +1,7 @@
 const User = require('./User');
 const Plant = require('./Plant');
 
-User.hasMany(Post, {
+User.hasMany(Plant, {
     foreignKey: 'user_id',
     onDelete: 'CASCADE'
   });
