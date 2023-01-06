@@ -46,3 +46,5 @@ router.post("/login", authMiddleware, module.exports.login); // add authMiddlewa
 router.post("/logout", authMiddleware, module.exports.logout); // add authMiddleware function to the logout route
 
 module.exports = router; 
+
+//Test
