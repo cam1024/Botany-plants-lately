@@ -34,7 +34,7 @@ body {
     padding: 0;
     margin: 0;
     color: #000;
-    font-family: 'Delius Swash Caps', 'serif';
+    
 }
 
 .student-profile .card {
@@ -75,4 +75,9 @@ body {
 }
 .card-2 {
     font-size: 20px;
+}
+.gap-3 {
+    gap:1rem;
+    
+
 }
