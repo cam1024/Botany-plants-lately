@@ -1,41 +1,24 @@
 body {
-    background: #67B26F;
-    /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #4ca2cd, #67B26F);
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #4ca2cd, #67B26F);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    padding: 0;
-    margin: 0;
-    font-family: 'Delius Swash Caps', 'serif';
-    color: #000;
+    background-color: rgb(216, 188, 151);
+    color: white
+    
 }
 
 .student-profile .card {
-    border-radius: 10px;
+    background-color: rgb(175, 143, 102);
+    color: white;
+    /*border-radius: 10px;*/
 }
 
-.student-profile .card .card-header .profile_img {
+.student-profile .card .card-header .profile-img {
+    color: white;
     width: 150px;
     height: 150px;
     object-fit: cover;
     margin: 10px auto;
     border: 10px solid #ccc;
-    border-radius: 50%;
+    /*border-radius: 50%;*/
 }
-
-/*body {
-    background: #67B26F;
-    /* fallback for old browsers */
-    /*background: -webkit-linear-gradient(to right, #4ca2cd, #67B26F);
-    /* Chrome 10-25, Safari 5.1-6 */
-    /*background: linear-gradient(to right, #4ca2cd, #67B26F);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    /*padding: 0;
-    margin: 0;
-    color: #000;*/
-    
-/*}*/
 
 .container {
     display: flex;
@@ -122,7 +105,8 @@ body {
 }
 
 .student-profile .card {
-    border-radius: 10px;
+   /* border-radius: 10px;*/
+   color: white;
 }
 
 .student-profile .card .card-header .profile_img {
@@ -131,7 +115,8 @@ body {
     object-fit: cover;
     margin: 10px auto;
     border: 10px solid #ccc;
-    border-radius: 50%;
+    color: white;
+    /*border-radius: 50%;*/
 
 }
 
@@ -145,6 +130,7 @@ body {
     font-size: 16px;
     color: #000;
     font-family: 'Delius Swash Caps', 'serif';
+    color: white;
 }
 
 .student-profile .table th,
@@ -153,6 +139,7 @@ body {
     padding: 5px 10px;
     color: #000;
     font-family: 'Delius Swash Caps', 'serif';
+    color: white;
 }
 .card-1 {
     font-size: 35px;
