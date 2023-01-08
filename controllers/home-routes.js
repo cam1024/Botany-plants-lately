@@ -14,6 +14,8 @@ router.get('/', async (req, res) => {
   }
 });
 
+
+
 router.get('/plants/:id', async (req, res) => {
   try {
     const plantData = await Plant.findByPk(req.params.id, {
@@ -37,15 +39,24 @@ router.get('/plants/:id', async (req, res) => {
   }
 });
 
-router.get('/dashboard', withAuth, (req, res) => {
+router.get('/register', async (req, res) => {
+  try {
+    
+    res.render(
+      'register');
 
-  res.render(
-    'dashboard',
-    {
-      logged_in: req.session.logged_in
-    }
-  )
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});
 
+router.get('/profile', async (req,res) => {
+  try {
+     res.render(
+      'profile');
+  } catch (err) {
+    res.status(500).json(err);
+  }
 });
 
 router.get('/login', (req, res) => {
