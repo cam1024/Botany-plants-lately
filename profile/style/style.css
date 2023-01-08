@@ -24,17 +24,101 @@ body {
     border-radius: 50%;
 }
 
-body {
+/*body {
     background: #67B26F;
     /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #4ca2cd, #67B26F);
+    /*background: -webkit-linear-gradient(to right, #4ca2cd, #67B26F);
     /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #4ca2cd, #67B26F);
+    /*background: linear-gradient(to right, #4ca2cd, #67B26F);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    padding: 0;
+    /*padding: 0;
     margin: 0;
-    color: #000;
+    color: #000;*/
     
+/*}*/
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+/* Navigation bar background color, size and placement */
+.topnav {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    background-color: #ce9d70;
+    color: white;
+  }
+  
+  /* Nav bar links (styled) */
+  .topnav a {
+    float: left;
+    display: block;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    left: 60%;
+  }
+  
+  /* Hover effect color */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* "Active" element styling*/
+  .topnav a.active {
+    /*background-color: #208d51;*/
+    color: rgb(255, 255, 255);
+  }
+  @media (max-width: 1250px) {
+    /* Nav bar smaller screens */
+  .topnav input[type=search] {
+    float: left;
+    padding: 6px;
+    border: none;
+    margin-top: 8px;
+    margin-right: 16px;
+    font-size: 17px;
+    width: 300px;
+  }
+  .btn-submit {
+    float: right;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(91, 182, 91);
+    color: white;
+    height: 40px;}
+  }
+  
+  @media (min-width: 1251px) {
+    /*Nav bar larger screens*/
+  .topnav input[type=search] {
+    float: left;
+    padding: 6px;
+    border: none;
+    margin-top: 8px;
+    margin-right: 16px;
+    font-size: 17px;
+    width: 400px;
+  
+  }
+}
+
+.uploadbtn {
+    width: 200px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(91, 182, 91);
+    color: white;
+  
 }
 
 .student-profile .card {
