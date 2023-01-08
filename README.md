@@ -1,5 +1,5 @@
 # Botany-Plants-Lately
->**Botany-Plants-Lately** is an "online plant database" application built using HTML, CSS, JS, MySQL, Handlebars, Json, typescript and node.js.
+**Botany-Plants-Lately** is an "online plant database" application built using HTML, CSS, JS, MySQL, Handlebars, Json, typescript and node.js.
 
 ! (image of deployed app)
 
