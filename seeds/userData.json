@@ -1,19 +1,25 @@
 [
     {
       "id": 1,
-      "name": "Sal",
+      "first_name": "Sal",
+      "last_name": "Holmes",
+      "username":"Salsa",
       "email": "sal@hotmail.com",
       "password": "password12345"
     },
     {
       "id": 2,
-      "name": "Lernantino",
+      "first_name": "Lernantino",
+      "last_name": "Holmes",
+      "username":"nantino",
       "email": "lernantino@gmail.com",
       "password": "password12345"
     },
     {
       "id": 3,
-      "name": "Amiko",
+      "first_name": "Amiko",
+      "last_name": "Holmes",
+      "username":"miko",
       "email": "amiko2k20@aol.com",
       "password": "password12345"
     }
