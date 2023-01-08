@@ -119,15 +119,16 @@
     
           <!---- <Register button>--> 
           <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
-          <button type="submit" class="registerbtn"><a href="profile.html"></a>Register</button>
+    <form>  
+          <button type="submit" class="registerbtn" formaction="profile.html">Register</button>
         </div>
       
          <!---- <Sign in button>--> 
         <div class="container signin">
-          <p>Already have an account? <a href="#Login" onclick="document.getElementById('id01').style.display='block'">Sign in.</a>
+          <p>Already have an account? <a href="#login" onclick="document.getElementById('id01').style.display='block'">Sign in.</a>
         </div>
       </form>
-
+    </form>
       
         
  
@@ -137,7 +138,7 @@
   <span onclick="document.getElementById('id01').style.display='none'"
 class="close" title="Close Modal">&times;</span>-->
 
-     Modal Content -->
+     <!--Modal Content -->
     <form class="modal-content animate" action="/action_page.php">
     <div class="imgcontainer">
       <img src="assets/images/BOTPFP.png" alt="Avatar" class="avatar">
@@ -149,8 +150,8 @@ class="close" title="Close Modal">&times;</span>-->
 
       <label for="psw"><b>Password</b></label>
       <input type="password" placeholder="Enter Password" name="psw" required>
-
-      <button type="submit" class="modal-button">Login</button>
+<form>
+      <button type="submit" class="modal-button" formaction="profile.html"><a href="profile.html"></a> Login</button>
       <label>
         <input type="checkbox" checked="checked" name="remember"> Remember me
       </label>
@@ -159,6 +160,7 @@ class="close" title="Close Modal">&times;</span>-->
     <div class="container" style="background-color:#f1f1f1">
       <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn modal-button">Cancel</button>
       <span class="psw"></span> <a href="#">Forgot password?</a></span>
+    </form> 
     </div>
   </form>
 </div>

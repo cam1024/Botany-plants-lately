@@ -21,6 +21,7 @@
              <a href="create.html">Create a Profile</a>
              <a href="zodiac.html">Zodiac Plants</a>
              <a href="holistic.html">Holistic</a>
+             <a href="forum.html">forum</a>
              <form id="form">
               <input type="search" id="query" name="q" placeholder="Search..."><button class="btn-submit">Submit</button>
             </form>
@@ -67,19 +68,20 @@ class="close" title="Close Modal">&times;</span>
 
       <label for="psw"><b>Password</b></label>
       <input type="password" placeholder="Enter Password" name="psw" required>
-
-      <button type="submit" class="modal-button">Login</button>
-      <label>
-        <input type="checkbox" checked="checked" name="remember"> Remember me
-      </label>
-    </div>
-
-    <div class="container" style="background-color:#f1f1f1">
-      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn modal-button">Cancel</button>
-      <span class="psw"></span> <a href="#">Forgot password?</a></span>
-    </div>
-  </form>
-</div>
+      <form>
+        <button type="submit" class="modal-button" formaction="profile.html"><a href="profile.html"></a> Login</button>
+        <label>
+          <input type="checkbox" checked="checked" name="remember"> Remember me
+        </label>
+      </div>
+  
+      <div class="container" style="background-color:#f1f1f1">
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn modal-button">Cancel</button>
+        <span class="psw"></span> <a href="#">Forgot password?</a></span>
+      </form> 
+      </div>
+    </form>
+  </div>
     <!---<footer>
       <a class="active" href="contact-us">Contact Us</a>
       <a href="#help">Help</a>
