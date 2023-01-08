@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css'>
 <html lang="en">
+<link
+    href="https://fonts.googleapis.com/css2?family=Comforter+Brush&family=Dancing+Script&family=Delius+Swash+Caps&family=Merienda+One&family=Oleo+Script&family=Paprika&family=Sofia&family=Tangerine&display=swap"
+    rel="stylesheet">
 
 <head>
     <meta charset="UTF-8">
@@ -8,21 +11,101 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/style.css">
     <title>Create Profile</title>
-    <h1>Create Your Profile!</h1>
 </head>
 
 <body>
-    <form action="post_profile.php" method="POST">
+    <div class="container text-center">
+    <div class="card-1">
+        <h1>Create Your Profile!<h1>
+    </div>
+    <form  onsubmit="return handleData()" action="post_profile.php" method="POST">
         
+        <div class="card-2 row">
 
-        <label>Name</label><input name="name">
-        <label>Age</label><input name="age">
-        <label>Country</label><input name="country">
-        <button>Submit</button>
-        
-        
+            <label>Name</label>
+            <input class="form-control"name="name">
+            <label>Age</label>
+            <input class="form-control"name="age">
+            <label>Country</label>
+            <input class="form-control"name="country">
+        </div>
+
+        <div class="p-2">
+            <h2>Select all your interests</h2>
+            <div class="row text-left">
+                <div class="col">
+                    <div class="form-group">
+                        <input class="form-check-input" type="checkbox" name="Farming" id="langs_javascript"
+                            value="JavaScript" checked>
+                        <label class="form-check-label" for="langs_javascript">Farming</label>
+                    </div>
+                    <div class="form-group">
+                        <input class="form-check-input" type="checkbox" name="Herbal" id="langs_perl" value="Perl">
+                        <label class="form-check-label" for="langs_perl">Herbal
+                            Supplements</label>
+                    </div>
+                    <div class="form-group">
+                        <input class="form-check-input" type="checkbox" name="langs" id="langs_php" value="PHP" checked>
+                        <label class="form-check-label" for="langs_php">Gardens</label>
+                    </div>
+                    <div class="form-group">
+                        <input class="form-check-input" type="checkbox" name="langs" id="langs_ruby" value="Ruby">
+                        <label class="form-check-label" for="langs_ruby">Fruit
+                            Trees</label>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="form-group">
+                        <input class="form-check-input" type="checkbox" name="langs" id="langs_javascript"
+                            value="JavaScript" checked>
+                        <label class="form-check-label" for="langs_javascript">Farming</label>
+                    </div>
+                    <div class="form-group">
+                        <input class="form-check-input" type="checkbox" name="langs" id="langs_perl" value="Perl">
+                        <label class="form-check-label" for="langs_perl">Herbal
+                            Supplements</label>
+                    </div>
+                    <div class="form-group">
+                        <input class="form-check-input" type="checkbox" name="langs" id="langs_php" value="PHP" checked>
+                        <label class="form-check-label" for="langs_php">Gardens</label>
+                    </div>
+                    <div class="form-group">
+                        <input class="form-check-input" type="checkbox" name="langs" id="langs_ruby" value="Ruby">
+                        <label class="form-check-label" for="langs_ruby">Fruit
+                            Trees</label>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="form-group">
+                        <input class="form-check-input" type="checkbox" name="langs" id="langs_javascript"
+                            value="JavaScript" checked>
+                        <label class="form-check-label" for="langs_javascript">Farming</label>
+                    </div>
+                    <div class="form-group">
+                        <input class="form-check-input" type="checkbox" name="langs" id="langs_perl" value="Perl">
+                        <label class="form-check-label" for="langs_perl">Herbal
+                            Supplements</label>
+                    </div>
+                    <div class="form-group">
+                        <input class="form-check-input" type="checkbox" name="langs" id="langs_php" value="PHP" checked>
+                        <label class="form-check-label" for="langs_php">Gardens</label>
+                    </div>
+                    <div class="form-group">
+                        <input class="form-check-input" type="checkbox" name="langs" id="langs_ruby" value="Ruby">
+                        <label class="form-check-label" for="langs_ruby">Fruit
+                            Trees</label>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <input class="btn btn-primary" type="submit" name="submit" value="Submit" />
+            </div>
+        </div>
     </form>
+    <footer>Botany Lately</footer>
+</div>
 
 </body>
-<footer>Botany Lately</footer>
+
+
 </html>
