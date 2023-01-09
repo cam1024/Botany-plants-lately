@@ -75,11 +75,31 @@ form {
   flex-direction: row;
 }
 
+.container-searchresults {
+
+  border: 2px solid black;
+  background-color: rgb(219, 201, 180);
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: row;
+}
+
+
+
 /*Plant of the day image place holder*/
 .image-pod {
   width: 300px;
   height: 300px;
 }
+
+
+/*Plant of the day image place holder*/
+.image-searchr {
+  width: 500px;
+  height: 500px;
+}
+
 
 /*Plant of the day discription place holder*/
 .pod-content {
@@ -166,28 +186,6 @@ form {
 }
 }
 
-
-
-/*footer {
-  display: block;
-  background-color: #3ea86e;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 20px;
-  width: 100%;
-  border-top: 1px solid white;
-  justify-content: center;
-  align-items: center;
-}
-
-footer a {
-  margin-left: auto;
-  margin-right: auto;
-  justify-content: center;
-  text-align: center;
-}*/
 
 /* Search bar on-click properties*/
 @media screen and (max-width: 600px) {

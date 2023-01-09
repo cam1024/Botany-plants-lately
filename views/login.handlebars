@@ -7,12 +7,14 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Login</title>
     <link rel="stylesheet" href="/css/login.css">
+    <link rel="stylesheet" href="/css/styles.css" />
+
 </head>
 
 <body>
     </html><form action="action_page.php" method="post">
     <div class="imgcontainer">
-      <img src="img_avatar2.png" alt="Avatar" class="avatar">
+      <img src="/images/images/BOTPFP.png" alt="Avatar" class="avatar">
     </div>
             <br>
             {{#if success}}
@@ -31,10 +33,10 @@
             <form action="" id="login" method="POST">
                 <div class="container">
                     <label for="uname"><b>Username</b></label>
-                    <input type="text" placeholder="Enter Username" name="uname" required>
+                    <input  id="user-login" type="text" placeholder="Enter Username" name="uname" required>
                 <div class="form-group">
-                    <label for="psw">Password <span class="text-danger">*</span></label>
-                    <input type="password" class="form-control" name="password" id="password" placeholder="Enter Your Password">
+                    <label for="psw">Password<span class="text-danger"></span></label>
+                    <input type="password" class="form-control" name="password" id="password-login" placeholder="Enter Your Password">
                 </div>
                 <div class="form-group">
                     <input type="submit" value="Login" class="btn btn-info btn-block">
@@ -51,4 +53,5 @@
     </div>
 </body>
 <script src="/js/jquery.min.js"></script>
+<script src="/js/login.js"></script>
 </html>
