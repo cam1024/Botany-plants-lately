@@ -4,7 +4,7 @@
 ! (image of deployed app)
 
 The deployed repository can be found at the following URL:
-"{{deployed heroku URL"
+"deployed heroku URL"
 
 ##User Story
 
@@ -12,7 +12,7 @@ Plants lovers and plant enthusiasts are able to search for plant identification,
 
 **As a plant lover**
 *I would like to search for plants types, that fit my lifestyle, personal interests and or needs.*
-   -SEARCH for the plant I have online and matching the plant I have to the plant photo online, to       correclty identify the plant.
+   -SEARCH for the plant I havein my home, online and matching the plant I have to the plant photo online, to       correclty identify the plant.
    -LEARN about the care, needs and uses of the plants
    -LEARN if there are any hollistic or toxicity properties of the plant
    -LEARN about the healing properties of hollistic plants
@@ -29,8 +29,37 @@ Plants lovers and plant enthusiasts are able to search for plant identification,
   ![Image of Home page WireFrame](assets/images/FDHomepage.png)
   ![Image of Login WireFrame](assets/images/FDLogin.png)
   ![Image of MyProfile WireFrame](assets/images/FDMyProfile.png)
-  (./assets/media/images/images"{{images of the wireframing}}"
-  
+ 
   ##Features
   
-  Features of the deployed applicatin and repository 
+  Features of the deployed application and repository are as follows:
+
+  ###HTML & CSS (UX/UI), JS
+  
+  
+
+  ###THIRD PARTY APIs
+
+  ##TECHNOLOGY USED
+
+  ##NEW TECHNOLOGY (NOT COVERED IN CLASS)
+  *TypeScript
+
+  ##INSTALLATION OF THE REPO
+  A copy of the repository can be cloned at https://github.com/cam1024/Botany-plants-lately. Simply click on the repo and select **Clone**. From the drop down menu select the copy icon. Type (directly into your terminal):
+  *'git clone' + 'the repo link' + enter.
+
+  ##FUTURE ITERATIONS
+  *FORUMS- We would like to implement a forum that will allow users to collaborate with like mind individuals. Where they can ask questions, share their experiences or simply make friends with fellow plant lovers.
+  
+  ##CREDITS
+
+  **Collaborators**
+  Marie Pacheco github: https://github.com/Lycanchic
+  Roger Kinney github: https://github.com/RogerAKinney
+  Cameron Duran github: https://github.com/cam1024
+  Milo Ellsworth github: https://github.com/saitek300
+  Kenan Mesic github: https://github.com/kenanmesic
+
+
+
