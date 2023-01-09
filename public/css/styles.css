@@ -75,6 +75,17 @@ form {
   flex-direction: row;
 }
 
+.container-searchresults {
+  border: 2px solid black;
+  background-color: rgb(219, 201, 180);
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: row;
+}
+
+
+
 /*Plant of the day image place holder*/
 .image-pod {
   width: 300px;
