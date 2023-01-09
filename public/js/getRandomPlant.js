@@ -53,4 +53,3 @@ function getRandomPlant() {
     
     button.addEventListener("click", randomTitle);
   })}
-  
