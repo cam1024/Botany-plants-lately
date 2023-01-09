@@ -1,3 +1,9 @@
+<!-- layout -->
+  <head>
+    <link rel="stylesheet" href="/css/styles.css" />
+  </head>
+     <!---- <Main-photo at the top of the welcome page>-->
+
     <div class="container">   
         <div class="topnav">
           <a class="active" href="#home">Home</a>
@@ -7,11 +13,14 @@
              <a href="zodiac.html">Zodiac Plants</a>
              <a href="holistic.html">Holistic</a>
              <form id="form">
-              <input type="search" id="query" name="q" placeholder="Search..."><button class="btn-submit">Submit</button>
+              <input type="search" id="query" name="q" placeholder="Search..."><button class="btn-submit" type="submit">Submit</button>
             </form>
-              </div>  
+              </div>
+                <div id="results"></div>
+                  <script src="plant-search.js"></script>
               <br>
-     <!---- <Main-photo at the top of the welcome page>-->
+     <!-- <Main-photo at the top of the welcome page>-->
+<!-- main -->
         <img class="main-image" src="/images/BPLBannerPic.jpg">
         <br>
         <br>
@@ -26,8 +35,19 @@
           <h2> Plant of the Day</h2>
           <p>{{plant of the day content}}</p>
          </div> --}}
-       </div>
-        
+          <button id="button">Get Random Plant</button>
+
+      <div id="plant-info">
+        <img id="image">
+        <h2 id="common-name"></h2>
+        <p id="scientific-name"></p>
+        <p id="family"></p>
+        <p id="duration"></p>
+        <p id="growth-habit"></p>
+      </div>
+      <script src="getRandomplant.js"></script>
+        </div>
+
 
         
  
