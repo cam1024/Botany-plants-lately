@@ -30,16 +30,7 @@ Plant.init(
       allowNull: false,
       
     },
-    zodiac: {
-      type: DataTypes.STRING,
-      allowNull: false,
-      
-    },
-    holistic: {
-      type: DataTypes.STRING,
-      allowNull: false,
-    },
-    belongs_to: {
+    user_id: {
       type: DataTypes.INTEGER,
       references:{
         model: 'user',
@@ -47,12 +38,14 @@ Plant.init(
       },
 
     },
- 
+  },
+    {
     sequelize,
     timestamps: false,
     freezeTableName: true,
     underscored: true,
     modelName: 'plant',
+    
   }
 );
 

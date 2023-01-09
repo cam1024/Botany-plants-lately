@@ -5,7 +5,6 @@
         "toxic_to_people": true,
         "toxic_to_dogs": true,
         "toxic_to_cats": true,
-        "holistic": "air purifying qualities",
-        "belongs_to": 2
+        "user_id": 2
     }
 ]
