@@ -50,6 +50,28 @@ router.get('/register', async (req, res) => {
   }
 });
 
+router.get('/holistic', async (req, res) => {
+  try {
+    
+    res.render(
+      'holistic');
+
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});
+
+router.get('/zodiac', async (req, res) => {
+  try {
+    
+    res.render(
+      'zodiac');
+
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});
+
 router.get('/profile', async (req,res) => {
   try {
      res.render(
