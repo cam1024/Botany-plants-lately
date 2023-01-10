@@ -1,15 +1,34 @@
+//global
+var button = document.getElementById('button');
+var randomPlant = document.querySelector('.randomPlant')
+let randomPlantId = []
+const arrayLength = 8
+
+//number generator for plant ID
+function randomPlantId1() {
+    randomPlantId = []
+    for (let i = 0; i < arrayLength; i++) {
+        randomPlantId.push(Math.floor((Math.random() * 11)))
+    }
+    //stringify plant ID in array
+    randomPlantId = randomPlantId.join("")
+}
 function getRandomPlant() {
     randomPlantID1();
-      var url = 'https://trefle.io/api/plants/random'
+      var url = 'https://trefle.io/api/plants/random' + randomPlantId
+      var progress = document.      createElement('p')
       fetch(url)
       .then(function (response) {
         if (response.ok) {
             return response.json()
         }
     })
-    .then(function (data) {
-        if (data.Response == 'False')
-    document.getElementById('button').addEventListener('click', getRandomPlant);
+      .then(function (data) {
+        if (data.Response == 'False') {
+          randomPlant.innerHTML = "Please wait while the plant loads"
+          randomPlantId1()
+          randomTitle()}
+    //document.getElementById('button').addEventListener('click', getRandomPlant);//
   
     else {
       getRandomPlant.innerHTML = " ";
@@ -24,7 +43,7 @@ function getRandomPlant() {
       //adding classes to generated elements
       page.classList.add("plantPage");
       common.classList.add("plantCommon");
-      image.classList.add("plantImage");
+      image.classList.add("image-pod");
       scientific.classList.add("plantScientific");
       family.classList.add("plantFamily");
       duration.classList.add("plantDuration");
@@ -51,5 +70,5 @@ function getRandomPlant() {
       localStorage.setItem("plantCommonName", data.CommonName);
     }
     
-    button.addEventListener("click", randomTitle);
+    button.addEventListener("click", randomPlant);
   })}
