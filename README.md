@@ -6,7 +6,7 @@
 ![Image of the Create Page](public/images/BOPCreate.png)
 ![Image of the Zodiac Page](public/images/BOPZodiac.png)
 ![Image of the Holistic page](public/images/BOPHolistic.png)
-![Alt text](public/images/Angelica.png)
+
 The deployed repository can be found at the following URL:
 "deployed heroku URL"
 
