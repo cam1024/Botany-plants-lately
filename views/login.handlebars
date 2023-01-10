@@ -12,10 +12,10 @@
 </head>
 
 <body>
-    </html><form action="action_page.php" method="post">
-    <div class="imgcontainer">
-      <img src="/images/images/BOTPFP.png" alt="Avatar" class="avatar">
-    </div>
+    <form class="modal-content animate" >
+        <div class="imgcontainer">
+        <img src="/images/BOTPFP.png" alt="Avatar" class="avatar">
+        </div>
             <br>
             {{#if success}}
             <div class="alert alert-success alert-dismissible fade show">
@@ -30,7 +30,7 @@
             </div>
             {{/if}}
 
-            <form action="" id="login" method="POST">
+            <form class="login-form" action="" id="login" method="POST">
                 <div class="container">
                     <label for="uname"><b>Username</b></label>
                     <input  id="user-login" type="text" placeholder="Enter Username" name="uname" required>
