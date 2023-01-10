@@ -1,11 +1,6 @@
 # Botany-Plants-Lately
 **Botany-Plants-Lately** is an "online plant database" application built using HTML, CSS, JS, MySQL, Handlebars.js, Sequelize, Json, typescript, express and node.js.
 
-![Image of the Home page](public/images/BOPHomepage.png)
-![Image of the Login Page](public/images/BOPLogin.png)
-![Image of the Create Page](public/images/BOPCreate.png)
-![Image of the Zodiac Page](public/images/BOPZodiac.png)
-![Image of the Holistic page](public/images/BOPHolistic.png)
 
 The deployed repository can be found at the following URL:
 "deployed heroku URL"
