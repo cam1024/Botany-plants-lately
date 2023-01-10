@@ -1,8 +1,12 @@
 # Botany-Plants-Lately
 **Botany-Plants-Lately** is an "online plant database" application built using HTML, CSS, JS, MySQL, Handlebars.js, Sequelize, Json, typescript, express and node.js.
 
-! (image of deployed app)
-
+![Image of the Home page](public/images/BOPHomepage.png)
+![Image of the Login Page](public/images/BOPLogin.png)
+![Image of the Create Page](public/images/BOPCreate.png)
+![Image of the Zodiac Page](public/images/BOPZodiac.png)
+![Image of the Holistic page](public/images/BOPHolistic.png)
+![Alt text](public/images/Angelica.png)
 The deployed repository can be found at the following URL:
 "deployed heroku URL"
 
@@ -25,10 +29,10 @@ Plants lovers and plant enthusiasts are able to search a plant database for iden
  
  ### Wireframes
   Paper wireframes have been included, to show the conceptual design of the webiste. Giving the basic layout and functionality.
-  ![image of Create a profile wireframes](assets/images/FDCreateaprofile.png)
-  ![Image of Home page WireFrame](assets/images/FDHomepage.png)
-  ![Image of Login WireFrame](assets/images/FDLogin.png)
-  ![Image of MyProfile WireFrame](assets/images/FDMyProfile.png)
+  ![image of Create a profile wireframes](public/images/FDCreateaprofile.png)
+  ![Image of Home page WireFrame](public/images/FDHomepage.png)
+  ![Image of Login WireFrame](public/images/FDLogin.png)
+  ![Image of MyProfile WireFrame](public/images/FDMyProfile.png)
  
   ##Features
   
@@ -49,7 +53,9 @@ Plants lovers and plant enthusiasts are able to search a plant database for iden
     *Json 
     *typescript
     *express 
-    *node.js.
+    *node.js
+    *Bootstrap
+    *Bcrypt
  
   ##NEW TECHNOLOGY (NOT COVERED IN CLASS)
   *TypeScript
