@@ -17,6 +17,8 @@ body {
     object-fit: cover;
     margin: 10px auto;
     border: 10px solid #ccc;
+    display:flex;
+    justify-content: center;
     /*border-radius: 50%;*/
 }
 
@@ -124,6 +126,8 @@ body {
     font-size: 20px;
     font-weight: 700;
     font-family: 'Delius Swash Caps', 'serif';
+    display: flex;
+    justify-content: center;
 }
 
 .student-profile .card p {

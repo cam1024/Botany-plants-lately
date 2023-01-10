@@ -39,12 +39,7 @@
         <br>
 
         <!---- <Plant of the day container>--> 
-        <div class="container-pod">
-          <img class="image-pod" src={{img-url}} alt="image placeholder">
-          <div class="pod-content">
-          <h2> Plant of the Day</h2>
-          <p>{{plant of the day content}}</p>
-         </div>
+        <div class="randomPlant">
        </div>
 
         <br>
@@ -70,7 +65,7 @@ class="close" title="Close Modal">&times;</span>
   <!-- Modal Content -->
   <form class="modal-content animate" action="/action_page.php">
     <div class="imgcontainer">
-      <img src="assets/images/BOTPFP.png" alt="Avatar" class="avatar">
+      <img src="public/images/BOTPFP.png" alt="Avatar" class="avatar">
     </div>
 
     <div class="container">
@@ -93,13 +88,8 @@ class="close" title="Close Modal">&times;</span>
       </div>
     </form>
   </div>
-    <!---<footer>
-      <a class="active" href="contact-us">Contact Us</a>
-      <a href="#help">Help</a>
-       <a href="#forums">Forums</a
-    </footer>-->
-
-
-  <script src="assets/js/login.js"></script>
+  <script src="public/js/getRandomPlant.js"></script>
+  <script src="public/js/plant-search.js"></script>
+  <script src="public/js/login.js"></script>
 </body>
 </html>
