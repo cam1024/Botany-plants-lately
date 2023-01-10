@@ -11,8 +11,8 @@ function searchPlants() {
               <h2>${plant.common_name}</h2>
               <p>${plant.scientific_name}</p>
               <p>${plant.family_common_name}</p>
-              <p>${plant.duration}</p>
-              <p>${plant.growth_habit}</p>
+              <p>${plant.family}</p>
+              <p>${plant.observations}</p>
             </div>
           `;
         });
