@@ -36,7 +36,7 @@ Plants lovers and plant enthusiasts are able to search a plant database for iden
   ###THIRD PARTY APIs
    Trefle | The plants API
    Trefle is a botanical API and data source.
-       *http://trefle.io/
+  *http://trefle.io/
 
   ##TECHNOLOGY USED
     *HTML 
