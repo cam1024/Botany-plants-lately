@@ -1,7 +1,14 @@
+const search = document.querySelector("#query");
+search.addEventListener('submit', searchPlants);
+const token = "token"
+
 function searchPlants() {
     const query = document.getElementById('query').value;
-    fetch(`https://trefle.io/api/plants?q=${query}`)
+   const url = `https://trefle.io/api/plants?q=${query}&token=${token}`;
+    fetch(url)
+    console.log(response)
       .then(response => response.json())
+      console.log(response)
       .then(data => {
         let resultsHTML = '';
         data.forEach(plant => {
@@ -19,7 +26,7 @@ function searchPlants() {
         document.getElementById('results').innerHTML = resultsHTML;
       })
       .catch(error => {
-        console.error(error);
+        console.log(error);
       });
   }
   

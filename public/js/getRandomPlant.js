@@ -1,10 +1,10 @@
 //global
-var button = document.getElementById('button');
+const grpButton = document.getElementById('GRP');
 var randomPlant = document.querySelector('.randomPlant')
 let randomPlantId = []
 const arrayLength = 6
-const TOKEN = "YOUR_TOKEN_HERE"
 
+console.log('linked')
 //number generator for plant ID
 function randomPlantId1() {
     randomPlantId = []
@@ -14,12 +14,15 @@ function randomPlantId1() {
     //stringify plant ID in array
     randomPlantId = randomPlantId.join("")
 }
-function getRandomPlant() {
+function getRandomPlant(event) {
+  event.preventDefault();
+  console.log('click')
     randomPlantId1();
       //https://trefle.io/api/plants/random//
-      var url = 'https://trefle.io/api/v1/plants/' + randomPlantId + '?token=' + TOKEN;
+      var url = 'https://trefle.io/api/v1/plants/' + randomPlantId + '?token=' + token;
       fetch(url)
       .then(function (response) {
+        console.log(response)
         if (!response.ok) 
         {
           throw new Error(response.statusText);
@@ -76,4 +79,4 @@ function getRandomPlant() {
     randomPlant.innerHTML = "There was an error: " + error;
   });
 }
-button.addEventListener("click", getRandomPlant);
+grpButton.addEventListener("click", getRandomPlant);
