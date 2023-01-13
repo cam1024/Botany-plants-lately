@@ -1,8 +1,8 @@
 # Botany-Plants-Lately
-**Botany-Plants-Lately** is an "online plant database" application built using HTML, CSS, JS, MySQL, Handlebars.js, Sequelize, Json, typescript, express and node.js.
+**Botany-Plants-Lately** is an "online plant database" application built using HTML, CSS, JS, MySQL, Handlebars.js, Sequelize, Json, typescript, insomnia, prettier, bootstrap, express and node.js.
 
 
-Images of the deployed website:
+## Images of the deployed website:
 ***
 
 ## Home Page
@@ -85,17 +85,21 @@ Plants lovers and plant enthusiasts are able to search a plant database for iden
     node.js
     Bootstrap
     Bcrypt
+    insomnia
+    prettier
  
   ## NEW TECHNOLOGY (NOT COVERED IN CLASS)
   ***
   *TypeScript
 
 ## THE DEPLOYED REPO CAN BE FOUND AT THE FOLLOWING URL:
+***
+https://botany-plants-lately.herokuapp.com/
 
-  ## INSTALLATION OF THE REPO
+  ## INSTALLATION OF THE REPO FROM GITHUB
   ***
   A copy of the repository can be cloned at https://github.com/cam1024/Botany-plants-lately. Simply click on the repo and select **Clone**. From the drop down menu select the copy icon. Type (directly into your terminal):
-  *'git clone' + 'the repo link' + enter.
+  'git clone' + 'the repo link' + enter.
 
   ## FUTURE ITERATIONS
   ***
