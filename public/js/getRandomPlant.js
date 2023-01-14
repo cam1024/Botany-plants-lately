@@ -35,9 +35,9 @@ function getRandomPlant(event) {
           randomPlant.innerHTML = "Please wait while the plant loads"
           randomPlantId1()
         }
-    //document.getElementById('button').addEventListener('click', getRandomPlant);//
+    /*document.getElementById('button').addEventListener('click', getRandomPlant);*/
   
-    else {
+       else {
       randomPlant.innerHTML = " ";
       var page = document.createElement("div");
       var common_name = document.createElement("h1");
