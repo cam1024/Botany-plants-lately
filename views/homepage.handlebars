@@ -1,60 +1,72 @@
 <!-- layout -->
-  <head>
-    <link rel="stylesheet" href="/css/styles.css" />
-  </head>
-    
-     <!-- <Main-photo at the top of the welcome page>-->
+
+<head>
+  <link rel="stylesheet" href="/css/styles.css" />
+</head>
+
+<!-- <Main-photo at the top of the welcome page>-->
 <!-- main -->
-        <img class="main-image" src="/images/BPLBannerPic.jpg">
-        <br>
-        <br>
-      
-        <h1>Hello and Welcome to Botany Plants Lately!</h1>   
-          <p>We are passionate about everything plants! Here you can identify the plants you have, find new beauties to add to your home or garden. We make it easy to learn how to care for them, their individual needs, their overall health and their hollistic properties.</p>
-         <br>
-        <br>
-          <div class="container-pod">
-            <button class="grp-button" id="GRP">Get Random Plant of the Day</button>
-              <div class="randomPlant"></div> 
-          </div>
+<img class="main-image" src="/images/BPLBannerPic.jpg">
+<br>
+<br>
 
-        <div class="container-pod">
-          <div class="pod-content">Plant Search</div>
-            <div class="searchPlants"></div>
-         
-        </div>
- 
+<h1>Hello and Welcome to Botany Plants Lately!</h1>
+<p>We are passionate about everything plants! Here you can identify the plants you have, find new beauties to add to
+  your home or garden. We make it easy to learn how to care for them, their individual needs, their overall health and
+  their hollistic properties.</p>
+<br>
+<br>
+<div class="container-pod">
+  <button class="grp-button" id="GRP">Get Random Plant of the Day</button>
+  <div class="randomPlant"></div>
+</div>
+
+<div class="container-pod">
+  <div class="pod-content">Plant Search</div>
+  <div class="searchPlants"></div>
+
+</div>
+
+</div>
+<!-- The Modal "Close" -->
+<div id="id01" class="modal">
+  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+
+  <!-- Modal Content -->
+  <form class="modal-content animate">
+    <div class="imgcontainer">
+      <img src="/images/BOTPFP.png" alt="Avatar" class="avatar">
     </div>
-    <!-- The Modal "Close" -->
-    <div id="id01" class="modal">
-    <span onclick="document.getElementById('id01').style.display='none'"
-    class="close" title="Close Modal">&times;</span>
 
-    <!-- Modal Content -->
-    <form class="modal-content animate" >
-        <div class="imgcontainer">
-        <img src="/images/BOTPFP.png" alt="Avatar" class="avatar">
-        </div>
+    <div class="container">
+      <label for="uname"><b>Username or email</b></label>
+      <input type="text" placeholder="Enter Username or email" name="uname" required>
 
-        <div class="container">
-        <label for="uname"><b>Username or email</b></label>
-        <input type="text" placeholder="Enter Username or email" name="uname" required>
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
 
-        <label for="psw"><b>Password</b></label>
-        <input type="password" placeholder="Enter Password" name="psw" required>
-
-<button type="submit"  id="modal" class="modal-button" formaction="/profile"><a href="/profile"></a> Login</button>
-        <label>
-            <input type="checkbox" checked="checked" name="remember"> Remember me
-        </label>
-        </div>
-
-        <div class="container" style="background-color:#f1f1f1">
-        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn modal-button">Cancel</button>
-        <span class="psw"></span> <a href="#">Forgot password?</a></span>
-        </div>
-    </form>
+      <button type="submit" id="modal" class="modal-button" formaction="/profile"><a href="/profile"></a> Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
     </div>
-       
- <script src="/js/getRandomPlant.js"></script>
- 
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'"
+        class="cancelbtn modal-button">Cancel</button>
+      <span class="psw"></span> <a href="#">Forgot password?</a></span>
+    </div>
+  </form>
+</div>
+
+{{#each data as | plant |}}
+  <div class="plant-card">
+      <img src="{{plant.image_url}}" alt="{{plant.common_name}}">
+      <h2>{{plant.common_name}}</h2>
+      <p>{{plant.scientific_name}}</p>
+      <p>{{plant.family_common_name}}</p>
+      <p>{{plant.family}}</p>
+      <p>{{plant.observations}}</p>
+  <div>
+{{/each}}
+<script src="/js/getRandomPlant.js"></script>
