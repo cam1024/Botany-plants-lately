@@ -13,11 +13,25 @@ router.get('/', async (req, res) => {
 
   } catch (err) {
     res.status(500).json(err);
+    
+  }
+});
+router.get('/trefle-token', async (req, res) => {
+  try {
+
+  res.json( {
+    token: process.env.TOKEN
+  })
+
+  } catch (err) {
+    console.log(err)
+    res.status(500).json(err);
+    
   }
 });
 
-router.get('/plantsearch/:plant', async (req, res) => {
-
+router.get('/plants/:plant', async (req, res) => {
+  const fetch =(await import("node-fetch")).default
   console.log(req.hostname)
   // The parameters for our POST request
   const params = {
@@ -27,22 +41,23 @@ router.get('/plantsearch/:plant', async (req, res) => {
 
 
   try {
-    let response = await fetch(
+   /* let response = await fetch(
       'https://trefle.io/api/auth/claim', {
       method: 'post',
       body: JSON.stringify(params),
       headers: { 'Content-Type': 'application/json' }
     });
-    response = await response.json()
+    response = await response.json()*/
 
-    const url = `https://trefle.io/api/v1/plants?${req.body.plant}&token=${response.token}`;
+    const url = `https://trefle.io/api/v1/plants?${req.query.plant}&token=${process.env.TOKEN}`;
     const getplants = await fetch(url)
     const { data } = await getplants.json()
     console.log(data)
-    res.render(
-      'homepage', { data });
+    res.json(data)
+    
 
   } catch (err) {
+    console.log(err)
     res.status(500).json(err);
   }
 });
