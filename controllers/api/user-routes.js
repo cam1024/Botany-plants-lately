@@ -1,6 +1,6 @@
 const router = require('express').Router();
 const { User } = require('../../models');
-
+const withAuth = require('../../utils/auth');
 
 router.get('/', async (req, res) => {
   
@@ -24,6 +24,51 @@ router.post('/', async (req, res) => {
     });
   } catch (err) {
     res.status(400).json(err);
+  }
+});
+
+router.put('/',withAuth, async (req, res) => {
+  try {
+    const userData = await User.update({
+      where: {
+        first_name: req.params.first_name,
+        last_name: req.params.last_name,
+        username: req.params.username,
+        email: req.params.email,
+        password: req.params.password
+      },
+    });
+    if (!userData) {
+      res.status(404).json({ message: 'No User found!' });
+      return;
+    }
+
+    res.status(200).json(userData);
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});
+
+router.delete('/',withAuth, async (req, res) => {
+  try {
+    const userData = await User.destroy({
+      where: {
+        id: req.params.id,
+        first_name: req.params.first_name,
+        last_name: req.params.last_name,
+        username: req.params.username,
+        email: req.params.email,
+        password: req.params.password
+      },
+    });
+    if (!userData) {
+      res.status(404).json({ message: 'No User found!' });
+      return;
+    }
+
+    res.status(200).json(userData);
+  } catch (err) {
+    res.status(500).json(err);
   }
 });
 

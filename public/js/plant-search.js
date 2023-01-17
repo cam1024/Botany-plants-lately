@@ -7,7 +7,7 @@ function searchPlants(event) {
   console.log('insertPlant')
     const query = document.getElementById('query').value;
   
-   fetch(`/plantsearch/${query}`)
+   fetch(`/${query}`)
     // fetch(url,{mode:"no-cors"})
     //   .then(response => console.log(response))
     //   .then(data => {

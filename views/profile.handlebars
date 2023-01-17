@@ -13,14 +13,16 @@
           <h3>Chad</h3>
           <button type="submit" class="uploadbtn">Upload a photo</button>
         </div>
-        <div class="card-body">
-          <p class="mb-0"><strong class="pr-1">First Name:</strong>Chad</p>
-          <p class="mb-0"><strong class="pr-1">Last Name</strong>MaGee</p>
-          <p class="mb-0"><strong class="pr-1">Username</strong>CheeseMaGee</p>
-          <p class="mb-0"><strong class="pr-1">Email address</strong>cmagee@plantlovers.com</p>
-          <p class="mb-0"><strong class="pr-1">Favorite Herb:</strong>mint</p>
-          <p class="mb-0"><strong class="pr-1">Plant Zodiac:</strong>Geranium</p>
-        </div>
+        {{#each user as || user}}
+          <div class="card-body">
+            <p class="mb-0"><strong class="pr-1">First Name:</strong>{{user.first_name}}</p>
+            <p class="mb-0"><strong class="pr-1">Last Name</strong>{{user.last_name}}</p>
+            <p class="mb-0"><strong class="pr-1">Username</strong>{{user.username}}</p>
+            <p class="mb-0"><strong class="pr-1">Email address</strong>{{user.email}}</p>
+            <p class="mb-0"><strong class="pr-1">Favorite Herb:</strong>mint</p>
+            <p class="mb-0"><strong class="pr-1">Plant Zodiac:</strong>Geranium</p>
+          </div>
+        {{/each}}
       </div>
       <div class="card shadow-sm col-lg-8">
         <div class="card-header bg-transparent border-0">
