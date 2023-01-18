@@ -122,9 +122,19 @@ router.get('/zodiac', async (req, res) => {
 
 router.get('/profile', async (req, res) => {
   try {
-    res.render(
-      'profile');
+    console.log(req.session.user_id)
+    const userData = await User.findByPk(req.session.user_id, {
+      attributes: { exclude: ['password'] }
+    });
+    console.log(userData)
+    const user = userData.get({ plain: true });
+
+    res.render('profile', {
+      ...user,
+      logged_in: true
+    });
   } catch (err) {
+    console.log(err)
     res.status(500).json(err);
   }
 });

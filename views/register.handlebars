@@ -32,16 +32,20 @@
             <form method="post" id="registration" action="">
                 <div class="form-group">
                     <label for="fname">First Name <span class="text-danger">*</span></label>
-                    <input type="text" class="form-control" id="fname" name="fname" placeholder="Enter Your First Name" value="{{fname}}">
+                    <input type="text" class="form-control" id="fname" name="fname" placeholder="Enter Your First Name" value="{{first_name}}">
                 </div>
         
                 <div class="form-group">
                     <label for="lname">Last Name <span class="text-danger">*</span></label>
-                    <input type="text" class="form-control" id="lname" name="lname" placeholder="Enter Your Last Name" value="{{lname}}">
+                    <input type="text" class="form-control" id="lname" name="lname" placeholder="Enter Your Last Name" value="{{last_name}}">
                 </div>
                 <div class="form-group">
-                    <label for="email">Username <span class="text-danger">*</span></label>
-                    <input type="text" class="form-control" name="uname" id="uname" placeholder="Enter your usename" value="{{uname}}">
+                    <label for="uname">Username <span class="text-danger">*</span></label>
+                    <input type="text" class="form-control" name="uname" id="uname" placeholder="Enter your usename" value="{{username}}">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email <span class="text-danger">*</span></label>
+                    <input type="text" class="form-control" name="email" id="email" placeholder="Enter your email" value="{{email}}">
                 </div>
                 <div class="form-group">
                     <label for="bd">Zodiac <span class="text-danger">*</span></label>
@@ -56,7 +60,7 @@
                     <input type="password" class="form-control" name="cpassword" id="cpassword" placeholder="Enter Same as Password" value="{{cpassword}}">
                 </div>
                 <div class="form-group">
-                    <input type="submit" value="Register" class="btn btn-info btn-block">
+                    <input type="submit" value="Register" class="btn btn-info btn-block" id="registerBtn">
                 </div>
                 <div class="form-group">
                     <div class="row">
@@ -70,4 +74,5 @@
     </div>
 </body>
 <script src="/js/jquery.min.js"></script>
+<script src="/js/login.js"></script>
 </html>
