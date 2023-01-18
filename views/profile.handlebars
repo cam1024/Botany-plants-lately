@@ -13,7 +13,7 @@
           <h3>Chad</h3>
           <button type="submit" class="uploadbtn">Upload a photo</button>
         </div>
-        {{#each user as || user}}
+        {{#with user}}
           <div class="card-body">
             <p class="mb-0"><strong class="pr-1">First Name:</strong>{{user.first_name}}</p>
             <p class="mb-0"><strong class="pr-1">Last Name</strong>{{user.last_name}}</p>
@@ -22,7 +22,7 @@
             <p class="mb-0"><strong class="pr-1">Favorite Herb:</strong>mint</p>
             <p class="mb-0"><strong class="pr-1">Plant Zodiac:</strong>Geranium</p>
           </div>
-        {{/each}}
+        {{/with}}
       </div>
       <div class="card shadow-sm col-lg-8">
         <div class="card-header bg-transparent border-0">
