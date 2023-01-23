@@ -96,10 +96,16 @@ Plants lovers and plant enthusiasts are able to search a plant database for iden
 ***
 https://botany-plants-lately.herokuapp.com/
 
-  ## INSTALLATION OF THE REPO FROM GITHUB
+ ## INSTALLATION OF THE REPO FROM GITHUB
   ***
-  A copy of the repository can be cloned at https://github.com/cam1024/Botany-plants-lately. Simply click on the repo and select **Clone**. From the drop down menu select the copy icon. Type (directly into your terminal):
+  A copy of the repository can be cloned at https://github.com/cam1024/Botany-plants-lately. 
+  * Simply click on the repo and select **Clone**.
+  * From the drop down menu select the **copy** icon. 
+  * Type (directly into your terminal):
+  
+  ```
   'git clone' + 'the repo link' + enter.
+  ```
 
   ## FUTURE ITERATIONS
   ***
