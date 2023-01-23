@@ -28,6 +28,7 @@ function getRandomPlant(event) {
     })
     .then(({ token }) => {
       console.log(token)*/
+      
       var url =
         "/plants/" + randomPlantId;
       fetch(url)
